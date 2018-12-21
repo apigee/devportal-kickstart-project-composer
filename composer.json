@@ -1,0 +1,43 @@
+{
+  "name": "apigee/devportal-kickstart-project",
+  "description": "Composer project template for the Apigee Developer Portal Drupal distribution.",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.2",
+    "cweagans/composer-patches": "^1.6.5",
+    "drupal-composer/drupal-scaffold": "^2.5",
+    "drupal/apigee_devportal_kickstart": "dev-master",
+    "php": "^7.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "post-install-cmd": [
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    ],
+    "post-update-cmd": [
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    ],
+    "quick-start": [
+      "composer install",
+      "php web/core/scripts/drupal quick-start apigee_devportal_kickstart"
+    ]
+  },
+  "extra": {
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"]
+    },
+    "enable-patching": true
+  }
+}
