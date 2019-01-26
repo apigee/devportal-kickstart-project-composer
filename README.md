@@ -20,16 +20,26 @@ the MY_PROJECT directory:
 composer create-project apigee/devportal-kickstart-project:8.x-dev MY_PROJECT --stability dev --no-interaction
 ```
 
-The actual webroot will be MY_PROJECT/web. You will need to point your web server to serve up that
+The actual web root will be MY_PROJECT/web. You will need to point your web server to serve up that
 directory and run the installer like any Drupal site installation.
 
-If you want to quickly evaluate the system you  can alternatively run the following command to run
-Drupal using PHP's built in web server and a SQLite database:
+If you want to quickly evaluate the system you can alternatively run the composer `quick-start` script to run
+the [Drupal 8 quick start command](https://www.drupal.org/docs/8/install/drupal-8-quick-start-command):
 
 ```
 cd MY_PROJECT
 composer quick-start
 ```
+
+This will start Drupal using PHP's built in web server and a SQLite database.
+
+# Issues, Questions and Feedback
+We encourage anyone with feedback, questions or issues to put in an issue into
+our [Github issue queue](https://github.com/apigee/devportal-kickstart-project-composer/issues).
+
+# Contribute
+We'd love to accept your patches and contributions to this project. Make sure to read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Development is happening in our [GitHub repository](https://github.com/apigee/devportal-kickstart-project-composer).
 
 # Disclaimer
 

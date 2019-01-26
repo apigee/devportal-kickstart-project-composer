@@ -9,6 +9,9 @@
       "url": "https://packages.drupal.org/8"
     }
   ],
+  "config": {
+    "process-timeout": 0
+  },
   "require": {
     "composer/installers": "^1.2",
     "cweagans/composer-patches": "^1.6.5",
