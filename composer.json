@@ -7,6 +7,21 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "swagger-api/swagger-ui",
+        "version": "3.22.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/swagger-api/swagger-ui/archive/v3.22.0.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "^1.2.0"
+        }
+      }
     }
   ],
   "config": {
