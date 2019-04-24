@@ -32,7 +32,8 @@
     "cweagans/composer-patches": "^1.6.5",
     "drupal-composer/drupal-scaffold": "^2.5",
     "apigee/apigee_devportal_kickstart": "^1.0.0",
-    "php": "^7.1"
+    "php": "^7.1",
+    "drush/drush": "~8"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
