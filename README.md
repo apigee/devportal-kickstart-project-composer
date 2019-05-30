@@ -39,6 +39,6 @@ We encourage anyone with feedback, questions or issues to put in an issue into o
 
 We'd love to accept your patches and contributions to this project. Make sure to read [CONTRIBUTING.md](CONTRIBUTING.md) for details. Development is happening in our [GitHub repository](https://github.com/apigee/devportal-kickstart-project-composer).
 
-## Disclaimer
+## Support
 
-This is not an officially supported Google product.
+This project, which integrates Drupal 8 with Apigee Edge, is supported by Google.
