@@ -19,8 +19,7 @@
     "apigee/apigee_devportal_kickstart": "^1.0.0",
     "drupal/apigee_m10n": "^1.0.0",
     "drupal/commerce": "^2.13",
-    "php": "^7.1",
-    "drush/drush": "~8"
+    "php": "^7.1"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
