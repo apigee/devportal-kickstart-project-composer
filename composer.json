@@ -20,7 +20,7 @@
     "drupal/apigee_m10n": "^1.0.0",
     "drupal/commerce": "^2.13",
     "php": "^7.1",
-    "drush/drush": "~8"
+    "drush/drush": "^9.7"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
