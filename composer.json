@@ -1,5 +1,5 @@
 {
-  "name": "giteshk/devportal-kickstart-project",
+  "name": "apigee/devportal-kickstart-project",
   "description": "Composer project template for the Apigee Developer Portal Drupal distribution.",
   "type": "project",
   "license": "GPL-2.0-or-later",
@@ -53,10 +53,10 @@
     "drupal-core-project-message": {
       "include-keys": ["homepage", "support"],
       "post-create-project-cmd-message": [
-        "<bg=blue;fg=white>                                                         </>",
+        "<bg=blue;fg=white>                                                                                 </>",
         "<bg=blue;fg=white>  Congratulations, you’ve installed the Apigee Developer Portal Drupal codebase  </>",
-        "<bg=blue;fg=white>  from the apigee/devportal-kickstart-project template!          </>",
-        "<bg=blue;fg=white>                                                         </>",
+        "<bg=blue;fg=white>  from the apigee/devportal-kickstart-project template!                          </>",
+        "<bg=blue;fg=white>                                                                                 </>",
         "",
         "<bg=yellow;fg=black>Next steps</>:",
         "  * Install the site: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart/use-kickstart-with-apigee-edge-for-private-cloud",
