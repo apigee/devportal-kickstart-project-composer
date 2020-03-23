@@ -60,7 +60,7 @@
         "<bg=blue;fg=white>                                                                                 </>",
         "",
         "<bg=yellow;fg=black>Next steps</>:",
-        "  * Install the site: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart/use-kickstart-with-apigee-edge-for-private-cloud",
+        "  * Install the site: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart/get-started-with-kickstart",
         "  * Read the guide: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart",
         "  * Report issues : https://github.com/apigee/apigee-devportal-kickstart-drupal/issues"
       ]
