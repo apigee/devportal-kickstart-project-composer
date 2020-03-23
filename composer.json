@@ -33,7 +33,8 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "process-timeout": 0
   },
   "extra": {
     "drupal-scaffold": {
@@ -64,7 +65,8 @@
         "  * Read the guide: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart",
         "  * Report issues : https://github.com/apigee/apigee-devportal-kickstart-drupal/issues"
       ]
-    }
+    },
+    "enable-patching": true
   },
   "scripts": {
     "quick-start": [
