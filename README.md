@@ -31,6 +31,10 @@ composer quick-start
 
 **Note: While `quick-start` is the quickest means of installing this profile, it is not the most performant, or complete. It does not present the configuration options available when installing via web browser. As a result, you'll need to configure the [Apigee Edge connection](https://www.drupal.org/docs/8/modules/apigee-edge/configure-the-connection-to-apigee-edge) manually, post installation. See [Apigee Edge documentation](https://www.drupal.org/docs/8/modules/apigee-edge) for more details.*
 
+## Update
+
+Read the guide on [drupal.org](https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart/get-started-with-kickstart#s-upgrading-kickstart).
+
 ## Issues, Questions and Feedback
 
 We encourage anyone with feedback, questions or issues to put in an issue into our [Github issue queue](https://github.com/apigee/devportal-kickstart-project-composer/issues).
