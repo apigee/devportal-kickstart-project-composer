@@ -30,4 +30,4 @@ We'd love to accept your patches and contributions to this project. Make sure to
 
 ## Support
 
-This project, which integrates Drupal 8 with Apigee Edge, is supported by Google.
+This project, which integrates Drupal 8/9 with Apigee Edge, is supported by Google.
