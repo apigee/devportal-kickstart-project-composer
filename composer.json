@@ -11,17 +11,30 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "furf/jquery-ui-touch-punch",
+        "version": "dev-master",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/furf/jquery-ui-touch-punch/archive/master.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
+    "php": "^7.3",
+    "apigee/apigee_devportal_kickstart": "^1.21.0",
     "composer/installers": "^1.9",
+    "drupal/apigee_m10n": "^1.7",
+    "drupal/commerce": "^2.21",
     "drupal/core-composer-scaffold": "^9",
     "drupal/core-project-message": "^9",
     "drupal/core-recommended": "^9",
-    "apigee/apigee_devportal_kickstart": "^1.21.0",
-    "drupal/apigee_m10n": "^1.7",
-    "drupal/commerce": "^2.21",
-    "php": "^7.3"
+    "furf/jquery-ui-touch-punch": "dev-master"
   },
   "require-dev": {
     "drupal/core-dev": "^9",
