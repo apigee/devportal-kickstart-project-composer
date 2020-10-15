@@ -21,6 +21,7 @@
     "apigee/apigee_devportal_kickstart": "^1.0.0",
     "drupal/apigee_m10n": "^1.0.0",
     "drupal/commerce": "^2.16",
+    "drupal/smtp": "^1.0",
     "php": "^7.2"
   },
   "require-dev": {
