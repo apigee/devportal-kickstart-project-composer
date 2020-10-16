@@ -34,6 +34,7 @@
     "drupal/core-composer-scaffold": "^9",
     "drupal/core-project-message": "^9",
     "drupal/core-recommended": "^9",
+    "drupal/smtp": "^1.0",
     "furf/jquery-ui-touch-punch": "dev-master"
   },
   "require-dev": {
