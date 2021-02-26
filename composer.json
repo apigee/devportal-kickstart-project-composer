@@ -34,6 +34,7 @@
     "drupal/core-composer-scaffold": "^9",
     "drupal/core-project-message": "^9",
     "drupal/core-recommended": "^9",
+    "drupal/jsonapi_extras": "^3.17",
     "drupal/smtp": "^1.0",
     "furf/jquery-ui-touch-punch": "dev-master"
   },
@@ -80,7 +81,18 @@
         "  * Report issues : https://github.com/apigee/apigee-devportal-kickstart-drupal/issues"
       ]
     },
-    "enable-patching": true
+    "enable-patching": true,
+    "patches": {
+      "drupal/core": {
+          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
+      },
+      "drupal/jsonapi_extras":{
+          "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch"
+      }
+    },
+    "patchLevel": {
+      "drupal/core": "-p2"
+    }
   },
   "scripts": {
     "quick-start": [
