@@ -1,103 +1,145 @@
 {
-  "name": "apigee/devportal-kickstart-project",
-  "description": "Composer project template for the Apigee Developer Portal Drupal distribution.",
-  "type": "project",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://www.drupal.org/project/apigee_devportal_kickstart",
-  "support": {
-    "docs": "https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
+    "name": "apigee/devportal-kickstart-project",
+    "description": "Composer project template for the Apigee Developer Portal Drupal distribution.",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/apigee_devportal_kickstart",
+    "support": {
+        "docs": "https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart"
     },
-    {
-      "type": "package",
-      "package": {
-        "name": "furf/jquery-ui-touch-punch",
-        "version": "dev-master",
-        "type": "drupal-library",
-        "dist": {
-          "url": "https://github.com/furf/jquery-ui-touch-punch/archive/master.zip",
-          "type": "zip"
+    "repositories": {
+        "forked-apigee-client-php": {
+            "type": "vcs",
+            "url": "https://github.com/apigee/apigee-client-php"
+        },
+        "forked-apigee_api_catalog": {
+            "type": "vcs",
+            "url": "https://github.com/apigee/apigee-api-catalog-drupal"
+        },
+        "forked-apigee_edge": {
+            "type": "vcs",
+            "url": "https://github.com/apigee/apigee-edge-drupal"
+        },
+        "forked-apigee_m10n": {
+            "type": "vcs",
+            "url": "https://github.com/apigee/apigee-m10n-drupal"
+        },
+        "forked-apigee_devportal_kickstart": {
+            "type": "vcs",
+            "url": "https://github.com/apigee/apigee-devportal-kickstart-drupal"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "1": {
+            "type": "package",
+            "package": {
+                "name": "furf/jquery-ui-touch-punch",
+                "version": "dev-master",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/furf/jquery-ui-touch-punch/archive/master.zip",
+                    "type": "zip"
+                }
+            }
         }
-      }
+    },
+    "require": {
+        "php": "^7.3",
+        "apigee/apigee-client-php": "2.x-dev as 2.0.8",
+        "apigee/apigee_devportal_kickstart": "dev-8.x-1.x as 1.24.0",
+        "composer/installers": "^1.9",
+        "drupal/apigee_m10n": "dev-8.x-1.x as 1.11",
+        "drupal/apigee_edge": "dev-8.x-1.x as 1.23",
+        "drupal/apigee_api_catalog": "dev-8.x-2.x as 2.6",
+        "drupal/commerce": "^2.21",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/jsonapi_extras": "^3.17",
+        "drupal/smtp": "^1.0",
+        "furf/jquery-ui-touch-punch": "dev-master"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9",
+        "drush/drush": "^10"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "process-timeout": 0
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                                                 </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Apigee Developer Portal Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the apigee/devportal-kickstart-project template!                          </>",
+                "<bg=blue;fg=white>                                                                                 </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart/get-started-with-kickstart",
+                "  * Read the guide: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart",
+                "  * Report issues : https://github.com/apigee/apigee-devportal-kickstart-drupal/issues"
+            ]
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/core": {
+                "Support entities that are neither content nor config entities": "https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
+            },
+            "drupal/jsonapi_extras": {
+                "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch"
+            }
+        },
+        "patchLevel": {
+            "drupal/core": "-p2"
+        }
+    },
+    "scripts": {
+        "quick-start": [
+            "composer install",
+            "php web/core/scripts/drupal quick-start apigee_devportal_kickstart"
+        ]
     }
-  ],
-  "require": {
-    "php": "^7.3",
-    "apigee/apigee_devportal_kickstart": "^1.21.0",
-    "composer/installers": "^1.9",
-    "drupal/apigee_m10n": "^1.7",
-    "drupal/commerce": "^2.21",
-    "drupal/core-composer-scaffold": "^9",
-    "drupal/core-project-message": "^9",
-    "drupal/core-recommended": "^9",
-    "drupal/jsonapi_extras": "^3.17",
-    "drupal/smtp": "^1.0",
-    "furf/jquery-ui-touch-punch": "dev-master"
-  },
-  "require-dev": {
-    "drupal/core-dev": "^9",
-    "drush/drush": "^10"
-  },
-  "conflict": {
-    "drupal/drupal": "*"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-    "sort-packages": true,
-    "process-timeout": 0
-  },
-  "extra": {
-    "drupal-scaffold": {
-      "locations": {
-        "web-root": "web/"
-      }
-    },
-    "installer-paths": {
-      "web/core": ["type:drupal-core"],
-      "web/libraries/{$name}": ["type:drupal-library"],
-      "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-      "web/themes/contrib/{$name}": ["type:drupal-theme"],
-      "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-      "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
-    },
-    "drupal-core-project-message": {
-      "include-keys": ["homepage", "support"],
-      "post-create-project-cmd-message": [
-        "<bg=blue;fg=white>                                                                                 </>",
-        "<bg=blue;fg=white>  Congratulations, you’ve installed the Apigee Developer Portal Drupal codebase  </>",
-        "<bg=blue;fg=white>  from the apigee/devportal-kickstart-project template!                          </>",
-        "<bg=blue;fg=white>                                                                                 </>",
-        "",
-        "<bg=yellow;fg=black>Next steps</>:",
-        "  * Install the site: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart/get-started-with-kickstart",
-        "  * Read the guide: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart",
-        "  * Report issues : https://github.com/apigee/apigee-devportal-kickstart-drupal/issues"
-      ]
-    },
-    "enable-patching": true,
-    "patches": {
-      "drupal/core": {
-          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
-      },
-      "drupal/jsonapi_extras":{
-          "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch"
-      }
-    },
-    "patchLevel": {
-      "drupal/core": "-p2"
-    }
-  },
-  "scripts": {
-    "quick-start": [
-      "composer install",
-      "php web/core/scripts/drupal quick-start apigee_devportal_kickstart"
-    ]
-  }
 }
