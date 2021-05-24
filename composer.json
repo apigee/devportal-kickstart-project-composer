@@ -40,6 +40,7 @@
     "furf/jquery-ui-touch-punch": "dev-master"
   },
   "require-dev": {
+    "apigee/apigee-mock-client-php": "^1.1",
     "drupal/core-dev": "^9",
     "drush/drush": "^10"
   },
