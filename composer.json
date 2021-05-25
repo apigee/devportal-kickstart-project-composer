@@ -34,11 +34,13 @@
     "drupal/core-composer-scaffold": "^8.8",
     "drupal/core-project-message": "^8.8",
     "drupal/core-recommended": "^8.8",
+    "drupal/google_analytics": "^3.1",
     "drupal/jsonapi_extras": "^3.17",
     "drupal/smtp": "^1.0",
     "furf/jquery-ui-touch-punch": "dev-master"
   },
   "require-dev": {
+    "apigee/apigee-mock-client-php": "^1.1",
     "drupal/core-dev": "^8.8",
     "drush/drush": "^9.7"
   },
