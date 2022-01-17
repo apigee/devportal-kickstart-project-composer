@@ -47,21 +47,23 @@
     },
     "require": {
         "php": "^7.3",
-        "apigee/apigee-client-php": "2.x-dev as 2.0.8",
-        "apigee/apigee_devportal_kickstart": "dev-8.x-1.x as 1.24.0",
+        "apigee/apigee-client-php": "2.x-dev as 2.0.13",
+        "apigee/apigee_devportal_kickstart": "2.x-dev as 2.0.1",
         "composer/installers": "^1.9",
-        "drupal/apigee_m10n": "dev-8.x-1.x as 1.11",
-        "drupal/apigee_edge": "dev-8.x-1.x as 1.23",
-        "drupal/apigee_api_catalog": "dev-8.x-2.x as 2.6",
+        "drupal/apigee_m10n": "2.x-dev as 2.0.1",
+        "drupal/apigee_edge": "2.x-dev as 2.0.2",
+        "drupal/apigee_api_catalog": "3.x-dev as 2.7",
         "drupal/commerce": "^2.21",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/google_analytics": "^3.1",
         "drupal/jsonapi_extras": "^3.17",
         "drupal/smtp": "^1.0",
         "furf/jquery-ui-touch-punch": "dev-master"
     },
     "require-dev": {
+        "apigee/apigee-mock-client-php": "^1.1",
         "drupal/core-dev": "^9",
         "drush/drush": "^10"
     },
@@ -72,7 +74,13 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "process-timeout": 0
+        "process-timeout": 0,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
