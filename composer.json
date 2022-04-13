@@ -51,7 +51,14 @@
   "prefer-stable": true,
   "config": {
     "sort-packages": true,
-    "process-timeout": 0
+    "process-timeout": 0,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "cweagans/composer-patches": true,
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true,
+      "drupal/core-project-message": true
+    }
   },
   "extra": {
     "drupal-scaffold": {
