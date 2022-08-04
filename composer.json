@@ -98,7 +98,8 @@
           "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
       },
       "drupal/jsonapi_extras":{
-          "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch"
+          "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch",
+          "Jsonapi_extra installation issue due to 3042467-50.patch": "https://github.com/apigee/apigee-devportal-kickstart-drupal/files/9189452/patch.569-1.txt"
       }
     },
     "patchLevel": {
