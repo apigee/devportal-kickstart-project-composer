@@ -37,6 +37,7 @@
     "drupal/google_analytics": "^3.1",
     "drupal/jsonapi_extras": "^3.17",
     "drupal/smtp": "^1.0",
+    "drush/drush": "^11.2",
     "furf/jquery-ui-touch-punch": "dev-master"
   },
   "require-dev": {
