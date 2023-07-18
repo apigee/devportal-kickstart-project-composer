@@ -26,7 +26,7 @@
     }
   ],
   "require": {
-    "php": "^7.4 || ^8.0",
+    "php": "^8.0 || ^8.1",
     "apigee/apigee_devportal_kickstart": "^2",
     "composer/installers": "^1.9",
     "drupal/apigee_m10n": "^2",
@@ -45,9 +45,7 @@
     "drush/drush": "^11"
   },
   "conflict": {
-    "drupal/drupal": "*",
-    "drupal/ctools": ">=4.0.1",
-    "drupal/pathauto": ">=1.11"
+    "drupal/drupal": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
