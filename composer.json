@@ -26,17 +26,17 @@
     }
   ],
   "require": {
-    "php": "^7.4 || ^8.0",
+    "php": "~8.0.0 || ~8.1.0",
     "apigee/apigee_devportal_kickstart": "^2",
     "composer/installers": "^1.9",
-    "drupal/apigee_m10n": "^2",
-    "drupal/commerce": "^2.21",
+    "drupal/apigee_m10n": "^2.1.0",
+    "drupal/commerce": "^2.36",
     "drupal/core-composer-scaffold": "^9",
     "drupal/core-project-message": "^9",
     "drupal/core-recommended": "^9",
-    "drupal/google_analytics": "^3.1",
-    "drupal/jsonapi_extras": "^3.17",
-    "drupal/smtp": "^1.0",
+    "drupal/google_analytics": "^4.0",
+    "drupal/jsonapi_extras": "^3.23",
+    "drupal/smtp": "^1.2",
     "furf/jquery-ui-touch-punch": "dev-master"
   },
   "require-dev": {
@@ -45,9 +45,7 @@
     "drush/drush": "^11"
   },
   "conflict": {
-    "drupal/drupal": "*",
-    "drupal/ctools": ">=4.0.1",
-    "drupal/pathauto": ">=1.11"
+    "drupal/drupal": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
