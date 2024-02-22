@@ -59,7 +59,8 @@
       "composer/installers": true,
       "drupal/core-composer-scaffold": true,
       "drupal/core-project-message": true,
-      "phpstan/extension-installer": true
+      "phpstan/extension-installer": true,
+      "php-http/discovery": true
     }
   },
   "extra": {
