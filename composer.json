@@ -96,8 +96,7 @@
     "enable-patching": true,
     "patches": {
       "drupal/core": {
-          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch",
-          "Fix for TypeError: FieldTypePluginManager::createFieldItem() called in FieldStorageConfig.php":"https://www.drupal.org/files/issues/2024-05-27/field-typeerror-3450175-3.patch"
+          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
       },
       "drupal/jsonapi_extras":{
           "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2024-06-07/add-enable-disable-all-buttons--2896799--32.patch",
