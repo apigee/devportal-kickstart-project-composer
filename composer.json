@@ -26,24 +26,24 @@
     }
   ],
   "require": {
-    "php": "~8.1.0 || ~8.2.0",
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
     "apigee/apigee_devportal_kickstart": "^3",
     "composer/installers": "^1.9",
-    "drupal/apigee_m10n": "^2.1.1",
-    "drupal/commerce": "^2.36",
-    "drupal/core-composer-scaffold": "^10",
-    "drupal/core-project-message": "^10",
-    "drupal/core-recommended": "^10",
+    "drupal/apigee_m10n": "^2.1.6",
+    "drupal/commerce": "^3.0",
+    "drupal/core-composer-scaffold": "^11",
+    "drupal/core-project-message": "^11",
+    "drupal/core-recommended": "^11",
     "drupal/google_analytics": "^4.0",
     "drupal/jsonapi_extras": "^3.25",
     "drupal/smtp": "^1.2",
     "furf/jquery-ui-touch-punch": "dev-master",
-    "drupal/adminimal_admin_toolbar": "^1.0@dev"
+    "drupal/adminimal_admin_toolbar": "^2.0"
   },
   "require-dev": {
     "apigee/apigee-mock-client-php": "^1.1",
-    "drupal/core-dev": "^10",
-    "drush/drush": "^12.4.3"
+    "drupal/core-dev": "^11",
+    "drush/drush": "^^13.3"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -96,12 +96,13 @@
     "enable-patching": true,
     "patches": {
       "drupal/core": {
-          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
+          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch",
+          "Fixes TypeError Html::escape()": "https://www.drupal.org/files/issues/2024-11-07/TypeError_htmlspecialchars_ArgumentNustBeTypeString_ArrayGiven-3352384-62.patch"
       },
       "drupal/jsonapi_extras":{
           "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2024-06-07/add-enable-disable-all-buttons--2896799--32.patch",
           "Jsonapi_extra installation issue due to 3042467-50.patch": "https://github.com/apigee/apigee-devportal-kickstart-drupal/files/9189452/patch.569-1.txt",
-        "Fixes installation error due to missing synthetic service kernel": "https://www.drupal.org/files/issues/2025-02-21/jsonapi_extras--2025-02-21--3508142--mr-65.patch"
+          "Fixes installation error due to missing synthetic service kernel": "https://www.drupal.org/files/issues/2025-02-21/jsonapi_extras--2025-02-21--3508142--mr-65.patch"
       }
     },
     "patchLevel": {
