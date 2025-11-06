@@ -26,14 +26,14 @@
     }
   ],
   "require": {
-    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "php": "~8.3.0",
     "apigee/apigee_devportal_kickstart": "^3",
     "composer/installers": "^1.9",
     "drupal/apigee_m10n": "^2.1.6",
     "drupal/commerce": "^3.0",
-    "drupal/core-composer-scaffold": "^11.0.8",
-    "drupal/core-project-message": "^11.0.8",
-    "drupal/core-recommended": "^11.0.8",
+    "drupal/core-composer-scaffold": "^11.1",
+    "drupal/core-project-message": "^11.1",
+    "drupal/core-recommended": "^11.1",
     "drupal/google_analytics": "^4.0",
     "drupal/jsonapi_extras": "^3.25",
     "drupal/smtp": "^1.2",
@@ -42,7 +42,7 @@
   },
   "require-dev": {
     "apigee/apigee-mock-client-php": "^1.1",
-    "drupal/core-dev": "^11.0.8",
+    "drupal/core-dev": "^11.1",
     "drush/drush": "^13.3"
   },
   "conflict": {
