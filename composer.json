@@ -38,7 +38,8 @@
     "drupal/jsonapi_extras": "^3.25",
     "drupal/smtp": "^1.2",
     "furf/jquery-ui-touch-punch": "dev-master",
-    "drupal/adminimal_admin_toolbar": "^2.0"
+    "drupal/adminimal_admin_toolbar": "^2.0",
+    "drupal/quickedit": "^2.0"
   },
   "require-dev": {
     "apigee/apigee-mock-client-php": "^1.1",
