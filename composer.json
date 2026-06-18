@@ -40,6 +40,12 @@
     "furf/jquery-ui-touch-punch": "dev-master",
     "drupal/adminimal_admin_toolbar": "^1.0@dev"
   },
+  "replace": {
+    "drupal/color": "*",
+    "drupal/forum": "*",
+    "drupal/hal": "*",
+    "drupal/tour": "*"
+  },
   "require-dev": {
     "apigee/apigee-mock-client-php": "^1.1.4",
     "drupal/core-dev": "^10.6",
