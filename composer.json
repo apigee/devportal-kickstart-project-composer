@@ -26,10 +26,10 @@
     }
   ],
   "require": {
-    "php": "~8.3.0",
-    "apigee/apigee_devportal_kickstart": "^3",
+    "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+    "apigee/apigee_devportal_kickstart": "^3.1.0",
     "composer/installers": "^1.9",
-    "drupal/apigee_m10n": "^2.1.6",
+    "drupal/apigee_m10n": "^2.2.0",
     "drupal/commerce": "^3.0",
     "drupal/core-composer-scaffold": "^11.3",
     "drupal/core-project-message": "^11.3",
@@ -41,7 +41,7 @@
     "drupal/adminimal_admin_toolbar": "^2.0"
   },
   "require-dev": {
-    "apigee/apigee-mock-client-php": "^1.1",
+    "apigee/apigee-mock-client-php": "^1.1.4",
     "drupal/core-dev": "^11.3",
     "drush/drush": "^13.3"
   },
