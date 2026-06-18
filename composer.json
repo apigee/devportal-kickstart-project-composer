@@ -9,36 +9,6 @@
   },
   "repositories": [
     {
-      "name": "forked-apigee_devportal_kickstart",
-      "type": "vcs",
-      "url": "https://github.com/shailesh-google/apigee-devportal-kickstart-drupal"
-    },
-    {
-      "name": "forked-apigee_m10n",
-      "type": "vcs",
-      "url": "https://github.com/shailesh-google/apigee-m10n-drupal"
-    },
-    {
-      "name": "forked-apigee_api_catalog",
-      "type": "vcs",
-      "url": "https://github.com/shailesh-google/apigee-api-catalog-drupal"
-    },
-    {
-      "name": "forked-apigee_edge",
-      "type": "vcs",
-      "url": "https://github.com/shailesh-google/apigee-edge-drupal"
-    },
-    {
-      "name": "forked-apigee-client-php",
-      "type": "vcs",
-      "url": "https://github.com/shailesh-google/apigee-client-php"
-    },
-    {
-      "name": "forked-apigee-mock-client-php",
-      "type": "vcs",
-      "url": "https://github.com/shailesh-google/apigee-mock-client-php"
-    },
-    {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     },
@@ -57,9 +27,9 @@
   ],
   "require": {
     "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
-    "apigee/apigee_devportal_kickstart": "dev-issue-791-3.x",
+    "apigee/apigee_devportal_kickstart": "^3.1.0",
     "composer/installers": "^1.9",
-    "drupal/apigee_m10n": "dev-issue-617",
+    "drupal/apigee_m10n": "^2.2.0",
     "drupal/commerce": "^2.36",
     "drupal/core-composer-scaffold": "^10.6",
     "drupal/core-project-message": "^10.6",
@@ -71,7 +41,7 @@
     "drupal/adminimal_admin_toolbar": "^1.0@dev"
   },
   "require-dev": {
-    "apigee/apigee-mock-client-php": "dev-issue-14",
+    "apigee/apigee-mock-client-php": "^1.1.4",
     "drupal/core-dev": "^10.6",
     "drush/drush": "^12.4.3"
   },
