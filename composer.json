@@ -97,7 +97,6 @@
     "enable-patching": true,
     "patches": {
       "drupal/core": {
-          "Fixes installation error due to missing synthetic service kernel After Configure Site Submit Button": "https://git.drupalcode.org/project/drupal/-/commit/31b727dc4f6.patch",
           "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2026-02-06/drupal-support_entities_11.3.x_backport_MR3548-3042467-94.patch",
           "Fixes TypeError Html::escape()": "https://www.drupal.org/files/issues/2024-11-07/TypeError_htmlspecialchars_ArgumentNustBeTypeString_ArrayGiven-3352384-62.patch"
       },
