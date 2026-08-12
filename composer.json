@@ -98,7 +98,7 @@
     "patches": {
       "drupal/core": {
           "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2026-02-06/drupal-support_entities_11.3.x_backport_MR3548-3042467-94.patch",
-          "Fixes TypeError Html::escape()": "https://www.drupal.org/files/issues/2024-11-07/TypeError_htmlspecialchars_ArgumentNustBeTypeString_ArrayGiven-3352384-62.patch"
+          "Fixes TypeError Html::escape()": "https://www.drupal.org/files/issues/2025-07-05/TypeError_htmlspecialchars_ArgumentNustBeTypeString_ArrayGiven-3352384-76.patch"
       },
       "drupal/jsonapi_extras":{
           "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2024-06-07/add-enable-disable-all-buttons--2896799--32.patch",
