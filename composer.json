@@ -106,6 +106,9 @@
       },
       "drupal/jsonapi_extras":{
           "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2024-06-07/add-enable-disable-all-buttons--2896799--32.patch"
+      },
+      "drupal/radix": {
+          "Fix non-static method formsearchblockformalter fatal error": "https://www.drupal.org/files/issues/2026-06-27/fix-static-call-formsearchblockformalter-3606690-1.patch"
       }
     },
     "patchLevel": {
