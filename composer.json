@@ -26,14 +26,14 @@
     }
   ],
   "require": {
-    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-    "apigee/apigee_devportal_kickstart": "^3",
+    "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+    "apigee/apigee_devportal_kickstart": "^3.1.0",
     "composer/installers": "^1.9",
-    "drupal/apigee_m10n": "^2.1.6",
+    "drupal/apigee_m10n": "^2.2.0",
     "drupal/commerce": "^3.0",
-    "drupal/core-composer-scaffold": "^11",
-    "drupal/core-project-message": "^11",
-    "drupal/core-recommended": "^11",
+    "drupal/core-composer-scaffold": "^11.3",
+    "drupal/core-project-message": "^11.3",
+    "drupal/core-recommended": "^11.3",
     "drupal/google_analytics": "^4.0",
     "drupal/jsonapi_extras": "^3.25",
     "drupal/smtp": "^1.2",
@@ -41,8 +41,8 @@
     "drupal/adminimal_admin_toolbar": "^2.0"
   },
   "require-dev": {
-    "apigee/apigee-mock-client-php": "^1.1",
-    "drupal/core-dev": "^11",
+    "apigee/apigee-mock-client-php": "^1.1.4",
+    "drupal/core-dev": "^11.3",
     "drush/drush": "^13.3"
   },
   "conflict": {
@@ -60,7 +60,8 @@
       "drupal/core-composer-scaffold": true,
       "drupal/core-project-message": true,
       "phpstan/extension-installer": true,
-      "php-http/discovery": true
+      "php-http/discovery": true,
+      "symfony/runtime": true
     }
   },
   "extra": {
@@ -96,7 +97,7 @@
     "enable-patching": true,
     "patches": {
       "drupal/core": {
-          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch",
+          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2026-02-06/drupal-support_entities_11.3.x_backport_MR3548-3042467-94.patch",
           "Fixes TypeError Html::escape()": "https://www.drupal.org/files/issues/2024-11-07/TypeError_htmlspecialchars_ArgumentNustBeTypeString_ArrayGiven-3352384-62.patch"
       },
       "drupal/jsonapi_extras":{
